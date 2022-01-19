@@ -33,3 +33,33 @@ h1 {
 	align-items: center;
 	flex-direction: column;
 }
+
+.game-grid {
+	width: 60vh; /* limit the amount of boxes in a row by applying this width. after 3 boxes the row will wrap */
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 100px;
+	margin-top: 40px;
+}
+
+.game-sqr {
+	height: 20vh;
+	width: 20vh; /* 60vh divided by 3 = 20vh */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--text);
+	
+}
+
+#reset {
+	padding: 10px 20px;
+	background-color: var(--btn-bg);
+	border-radius: 20px;
+	border: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--bg);
+	cursor: pointer;
+	text-transform: uppercase;
+}
