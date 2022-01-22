@@ -1,65 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-	--text: #dbdfac;
-	--bg: #2a1e5c;
-	--btn-bg: #d7f171;
-}
-
-* {
+	--text: #FF5959;
+	--bg: #676FA3;
+	--btn-bg: #CDDEFF;
+	--btn-bg-hover: #828fa8;
+  }
+  
+  * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-body {
-	font-family: 'Roboto';
+  }
+  
+  body {
 	color: var(--text);
 	background-color: var(--bg);
-	
-}
-
-h1 {
-	font-size: 70px;
+	font-family: 'Roboto', cursive;
+  }
+  
+  h1 {
+	font-size: 80px;
 	margin-bottom: 0;
 	text-transform: uppercase;
-}
-
-.container {
+  }
+  
+  .container {
 	height: 100vh;
-	width: 100vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-}
-
-.game-grid {
-	width: 60vh; /* limit the amount of boxes in a row by applying this width. after 3 boxes the row will wrap */
+  }
+  
+  #game-grid {
+	width: 60vw;
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 100px;
 	margin-top: 40px;
-}
-
-.game-sqr {
+  }
+  
+  .sqr {
 	height: 20vh;
-	width: 20vh; /* 60vh divided by 3 = 20vh */
+	width: 20vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: var(--text);
-	
-}
-
-#reset {
+  }
+  
+  #reset {
 	padding: 10px 20px;
+	margin: 20px;
 	background-color: var(--btn-bg);
-	border-radius: 20px;
 	border: none;
+	border-radius: 20px;
+	color: var(--bg);
 	font-size: 20px;
 	font-weight: bold;
-	color: var(--bg);
 	cursor: pointer;
 	text-transform: uppercase;
-}
+  }
+
+  #reset:hover {
+	  background-color: var(--btn-bg-hover);
+  }
